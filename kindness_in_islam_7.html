@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ihsan Project — Excellence of Kindness in Islam</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800;900&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+
+  <style>
+    body { font-family: 'Inter', sans-serif; }
+    .section { padding-top: 6rem; padding-bottom: 6rem; }
+    /* Adjusted geometric divider for prominence */
+    .geometric-divider { height: 8px; background: repeating-linear-gradient(45deg, #16a34a, #16a34a 15px, #facc15 15px, #facc15 30px); border-radius: 9999px; margin: 6rem auto; width: 90%; max-width: 1000px; opacity: 0.8; }
+    
+    /* Custom fade-in-up classes */
+    .fade-in-up { opacity: 0; transform: translateY(20px); transition: all 0.6s ease-out; }
+    .fade-in-up.visible { opacity: 1; transform: translateY(0); }
+    
+    /* Button and link hover effects */
+    .btn { transition: all 0.3s ease; cursor: pointer; }
+    .btn:hover { transform: translateY(-3px) scale(1.02); box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05); }
+    
+    /* Input focus style */
+    input:focus, textarea:focus { outline: none; box-shadow: 0 0 0 4px rgba(22, 163, 74, 0.4); border-color: #16a34a; }
+    
+    /* Tailwind Dark Mode compatibility adjustment for text in light components */
+    .dark .text-gray-800 { color: #e5e7eb; } 
+  </style>
+</head>
+<body class="bg-gray-50 text-gray-800 antialiased transition-colors duration-500">
+
+  <div class="fixed top-6 right-6 z-50 flex flex-col space-y-3">
+      <button id="storageToggle" class="bg-blue-600 text-white p-3 rounded-full shadow-xl hover:bg-blue-700 btn transition-transform duration-300" aria-label="Toggle Offline Storage">💾</button>
+
+      <button id="darkToggle" class="bg-green-600 text-white p-3 rounded-full shadow-xl hover:bg-green-700 btn transition-transform duration-300" aria-label="Toggle Dark Mode">🌙</button>
+  </div>
+
+
+  <a href="#home" class="fixed bottom-6 left-6 z-50 bg-gray-800 text-white p-3 rounded-full shadow-xl hover:bg-gray-700 btn transition-transform duration-300" aria-label="Back to Top">
+    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18" /></svg>
+  </a>
+
+  <header class="bg-white dark:bg-gray-900 shadow-xl fixed top-0 left-0 w-full z-40 transition-colors duration-500">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+      <a href="#home" class="flex items-center space-x-3 group" aria-label="Ihsan Project Home">
+        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="group-hover:rotate-12 transition-transform duration-300">
+          <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+          <polyline points="2 17 12 22 22 17"></polyline>
+          <polyline points="2 12 12 17 22 12"></polyline>
+        </svg>
+        <h1 class="text-2xl font-black text-green-600 dark:text-green-400">Ihsan Project</h1>
+      </a>
+      <nav class="hidden md:flex space-x-6 font-medium">
+        <a href="#home" class="hover:text-green-600 dark:hover:text-green-400 btn">Home</a>
+        <a href="#about" class="hover:text-green-600 dark:hover:text-green-400 btn">About</a>
+        <a href="#core" class="hover:text-green-600 dark:hover:text-green-400 btn">Concepts</a>
+        <a href="#resources" class="hover:text-green-600 dark:hover:text-green-400 btn">Resources</a> <a href="#stories" class="hover:text-green-600 dark:hover:text-green-400 btn">Stories</a> <a href="#programs" class="hover:text-green-600 dark:hover:text-green-400 btn">Programs</a>
+        <a href="#contact" class="hover:text-green-600 dark:hover:text-green-400 btn">Contact</a>
+      </nav>
+      </div>
+  </header>
+
+  <section id="home" class="section pt-32 pb-24 px-4 text-center bg-gradient-to-br from-green-500 to-green-700 dark:from-green-700 dark:to-green-900 text-white" data-aos="fade-in-down">
+    <h2 class="text-5xl md:text-6xl font-extrabold mb-4 drop-shadow-lg">Ihsan: The Excellence of Kindness</h2>
+    <p class="text-xl md:text-2xl max-w-3xl mx-auto opacity-95 mb-10">Seeking the highest degree of sincerity and moral perfection in all aspects of life.</p>
+    <a href="#about" class="bg-yellow-400 text-green-800 py-3 px-10 rounded-full font-bold text-lg shadow-2xl hover:bg-yellow-300 btn">Start Exploring</a>
+  </section>
+
+  <section id="about" class="section max-w-5xl mx-auto px-6" data-aos="fade-up">
+    <span class="text-sm font-semibold text-green-600 uppercase block text-center">Foundation</span>
+    <h3 class="text-4xl font-bold text-center mb-6">What is Ihsan? 🤔</h3>
+    <p class="text-lg mb-4 leading-relaxed">**Ihsan (إحسان)** is a core Islamic concept often translated as **"perfection," "excellence," or "beneficence."** It signifies the highest spiritual state—the third dimension of religion after Islam (submission) and Iman (faith). It is fundamentally about performing good deeds beautifully, consciously, and sincerely.</p>
+    <p class="text-lg mb-4 leading-relaxed">The Prophet Muhammad (peace be upon him) defined Ihsan in the **Hadith of Jibril** as: **"To worship Allah as though you see Him, and if you cannot see Him, to know that He sees you."** This concept of *God-consciousness* (Taqwa) is what elevates a simple ritual or act of kindness into an act of true spiritual excellence.</p>
+    <p class="text-lg mb-6 leading-relaxed">It is the principle that guides Muslims to treat their **family, neighbors, strangers, animals, and the environment** with the utmost **sincerity and moral perfection**, ensuring the quality of the action matches the purity of the intention. It is the practical manifestation of faith, applied with an aesthetic and moral standard.</p>
+    <div class="bg-yellow-50 dark:bg-gray-800 border-l-4 border-yellow-500 dark:border-yellow-400 p-4 rounded-md font-semibold text-gray-700 dark:text-gray-300 shadow-md">
+      <p class="italic">“Ihsan is to worship Allah as if you see Him, for if you don't see Him, surely He sees you.”</p>
+      <p class="text-sm mt-1 text-right">— Part of the famous **Hadith of Jibril**</p>
+    </div>
+  </section>
+
+  <div class="geometric-divider"></div>
+
+  <section id="core" class="section bg-gray-100 dark:bg-gray-900" data-aos="fade-up">
+    <div class="max-w-6xl mx-auto px-6">
+      <span class="text-sm font-semibold text-center block text-green-600 uppercase">The Pillars</span>
+      <h3 class="text-4xl font-bold text-center mb-10">Core Concepts of Ihsan ✨</h3>
+      <p class="text-center text-lg max-w-4xl mx-auto mb-12 dark:text-gray-300">Ihsan isn't a singular concept but a merging of profound moral qualities that together lead to spiritual excellence. Understanding these pillars is key to practicing Ihsan effectively in modern life.</p>
+      <div class="grid md:grid-cols-3 gap-10">
+        <div class="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-xl border-t-4 border-blue-500 hover:shadow-2xl transition-shadow duration-300" data-aos="zoom-in" data-aos-delay="100">
+          <h4 class="text-2xl font-bold mb-3 text-blue-600">Rahma (Mercy)</h4>
+          <p class="text-sm">**Rahma** demands universal compassion to all creation. It is the heart of Ihsan, instructing us to show kindness, patience, and forgiveness. A Muslim must reflect Allah's mercy, treating everyone and everything with tenderness and avoiding unnecessary harm.</p>
+        </div>
+        <div class="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-xl border-t-4 border-red-500 hover:shadow-2xl transition-shadow duration-300" data-aos="zoom-in" data-aos-delay="300">
+          <h4 class="text-2xl font-bold mb-3 text-red-600">Adl (Justice)</h4>
+          <p class="text-sm">**Adl** is upholding fairness, equity, and righteousness. Ihsan complements justice; true excellence includes ensuring others receive their rights fully, even if they are your enemies. Justice is the prerequisite for the higher virtue of Ihsan (extra kindness).</p>
+        </div>
+        <div class="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-xl border-t-4 border-yellow-500 hover:shadow-2xl transition-shadow duration-300" data-aos="zoom-in" data-aos-delay="500">
+          <h4 class="text-2xl font-bold mb-3 text-yellow-600">Qasd (Sincerity)</h4>
+          <p class="text-sm">**Qasd** is the purity of intention (**Niyyah**). All actions must be performed solely for the sake of Allah, ensuring the motive is as flawless as the deed. Ihsan requires eliminating hypocrisy, showing off, and worldly gain from one's spiritual goals.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="geometric-divider"></div>
+  
+  <section id="resources" class="section max-w-6xl mx-auto px-6" data-aos="fade-up">
+    <span class="text-sm font-semibold text-center block text-green-600 uppercase">Knowledge Storage</span>
+    <h3 class="text-4xl font-bold text-center mb-10">Ihsan Resource Library 📚</h3>
+    <p class="text-center text-lg max-w-4xl mx-auto mb-12 dark:text-gray-300">Our digital archive of knowledge, available for download and offline reading, to help deepen your understanding of excellence.</p>
+    
+    <div class="grid md:grid-cols-3 gap-8">
+        <div class="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-lg border-l-4 border-green-500 hover:shadow-xl transition-shadow duration-300" data-aos="fade-up" data-aos-delay="100">
+            <h4 class="text-xl font-bold mb-2">The Ihsan Treatise (PDF)</h4>
+            <p class="text-sm dark:text-gray-300">A comprehensive academic paper on the historical and theological development of Ihsan. (12 MB)</p>
+            <button class="mt-3 text-sm font-semibold text-green-600 hover:underline">Download / Save Offline</button>
+        </div>
+        <div class="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-lg border-l-4 border-yellow-500 hover:shadow-xl transition-shadow duration-300" data-aos="fade-up" data-aos-delay="200">
+            <h4 class="text-xl font-bold mb-2">40 Hadith on Kindness (E-Book)</h4>
+            <p class="text-sm dark:text-gray-300">A curated collection of sayings of the Prophet (PBUH) related to benevolence and excellence. (2 MB)</p>
+            <button class="mt-3 text-sm font-semibold text-green-600 hover:underline">Download / Save Offline</button>
+        </div>
+        <div class="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-lg border-l-4 border-blue-500 hover:shadow-xl transition-shadow duration-300" data-aos="fade-up" data-aos-delay="300">
+            <h4 class="text-xl font-bold mb-2">Monthly Ihsan Podcast (MP3)</h4>
+            <p class="text-sm dark:text-gray-300">Audio lectures focusing on practical application of Ihsan in family and workplace life. (70 MB)</p>
+            <button class="mt-3 text-sm font-semibold text-green-600 hover:underline">Listen / Save Offline</button>
+        </div>
+    </div>
+  </section>
+
+  <div class="geometric-divider"></div>
+
+  <section id="stories" class="section bg-gray-100 dark:bg-gray-900" data-aos="fade-up">
+    <div class="max-w-6xl mx-auto px-6">
+      <span class="text-sm font-semibold text-center block text-green-600 uppercase">Stored Experiences</span>
+      <h3 class="text-4xl font-bold text-center mb-10">Ihsan Stories & Testimonials 💖</h3>
+      <p class="text-center text-lg max-w-4xl mx-auto mb-12 dark:text-gray-300">Read inspiring accounts from people around the world applying Ihsan in their daily lives, demonstrating its tangible impact.</p>
+
+      <div class="space-y-8">
+        <blockquote class="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-xl border-l-4 border-yellow-500 italic text-lg" data-aos="fade-left">
+            "I used to rush my prayers, but after internalizing the concept of Ihsan, I treat every prostration as if it's my last. The peace I gained is immeasurable."
+            <footer class="mt-3 font-bold text-sm text-yellow-600">— Amina K., London</footer>
+        </blockquote>
+        <blockquote class="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-xl border-l-4 border-green-500 italic text-lg" data-aos="fade-right">
+            "The Green Masjid Project showed me that Ihsan towards the environment is just as important as Ihsan towards people. We reduced our waste by 40%."
+            <footer class="mt-3 font-bold text-sm text-green-600">— Tariq M., Toronto</footer>
+        </blockquote>
+      </div>
+      <div class="text-center mt-10">
+          <a href="#" class="bg-green-600 text-white py-3 px-8 rounded-full font-bold shadow-lg hover:bg-green-700 btn">Submit Your Story</a>
+      </div>
+    </div>
+  </section>
+
+  <div class="geometric-divider"></div>
+
+  <section id="programs" class="section max-w-6xl mx-auto px-6" data-aos="fade-up">
+    <span class="text-sm font-semibold text-center block text-green-600 uppercase">Community Action</span>
+    <h3 class="text-4xl font-bold text-center mb-10">Our Ihsan Community Programs 🤝</h3>
+    <div class="grid md:grid-cols-3 gap-8">
+      <div class="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-xl transition-shadow duration-300 hover:scale-[1.03] btn" data-aos="flip-up" data-aos-delay="100">
+        <h4 class="text-xl font-bold text-green-700 dark:text-green-400 mb-2">Orphan Care</h4>
+        <p class="text-sm dark:text-gray-300">Providing holistic support to orphaned children, guided by the highest standards of Ihsan. (Education & Mentorship)</p>
+      </div>
+      <div class="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-xl transition-shadow duration-300 hover:scale-[1.03] btn" data-aos="flip-up" data-aos-delay="300">
+        <h4 class="text-xl font-bold text-green-700 dark:text-green-400 mb-2">Eco Stewardship</h4>
+        <p class="text-sm dark:text-gray-300">Making community centers energy-efficient and promoting recycling and ecological conservation. (Green Initiatives)</p>
+      </div>
+      <div class="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-xl transition-shadow duration-300 hover:scale-[1.03] btn" data-aos="flip-up" data-aos-delay="500">
+        <h4 class="text-xl font-bold text-green-700 dark:text-green-400 mb-2">Elderly Support</h4>
+        <p class="text-sm dark:text-gray-300">A volunteer program dedicated to showing Ihsan to seniors through companionship and practical assistance. (Dignity Focus)</p>
+      </div>
+    </div>
+  </section>
+
+  <div class="geometric-divider"></div>
+
+  <section id="contact" class="section max-w-5xl mx-auto px-6" data-aos="fade-up">
+    <span class="text-sm font-semibold text-center block text-green-600 uppercase">Get Involved</span>
+    <h3 class="text-4xl font-bold text-center mb-10">Connect with the Project 📞</h3>
+    <p class="text-center text-lg max-w-3xl mx-auto mb-8 dark:text-gray-300">Whether you want to partner, volunteer, or simply ask a question about Ihsan, we are here to help. Reach out to the Ihsan Project team.</p>
+    <form class="space-y-6 bg-white dark:bg-gray-800 p-8 rounded-xl shadow-2xl">
+      <div class="grid md:grid-cols-2 gap-6">
+        <div>
+          <label for="name" class="block text-sm font-medium mb-1">Name</label>
+          <input type="text" id="name" name="name" required class="w-full p-3 border border-gray-300 rounded-lg dark:bg-gray-700 dark:border-gray-600 dark:text-white" placeholder="Your Name" />
+        </div>
+        <div>
+          <label for="email" class="block text-sm font-medium mb-1">Email</label>
+          <input type="email" id="email" name="email" required class="w-full p-3 border border-gray-300 rounded-lg dark:bg-gray-700 dark:border-gray-600 dark:text-white" placeholder="Your Email" />
+        </div>
+      </div>
+      <div>
+        <label for="subject" class="block text-sm font-medium mb-1">Subject</label>
+        <input type="text" id="subject" name="subject" required class="w-full p-3 border border-gray-300 rounded-lg dark:bg-gray-700 dark:border-gray-600 dark:text-white" placeholder="What is this about?" />
+      </div>
+      <div>
+        <label for="message" class="block text-sm font-medium mb-1">Message</label>
+        <textarea id="message" name="message" rows="5" required class="w-full p-3 border border-gray-300 rounded-lg dark:bg-gray-700 dark:border-gray-600 dark:text-white" placeholder="Your message here..."></textarea>
+      </div>
+      <button type="submit" class="w-full bg-green-600 text-white py-3 rounded-lg font-bold hover:bg-green-700 btn shadow-md">Send Message</button>
+    </form>
+  </section>
+
+  <footer class="bg-gray-800 dark:bg-gray-900 text-white text-center py-8 mt-16 transition-colors duration-500">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="flex flex-col md:flex-row justify-center items-center space-y-4 md:space-y-0 md:space-x-8 mb-4">
+        <a href="#about" class="hover:text-green-400">Mission</a>
+        <a href="#programs" class="hover:text-green-400">Volunteer</a>
+        <a href="#resources" class="hover:text-green-400">Library</a>
+        <a href="mailto:info@ihsanproject.org" class="hover:text-green-400">Email Us</a>
+      </div>
+      <p class="text-sm border-t border-gray-700 pt-4">&copy; 2025 Ihsan Project. All Rights Reserved. Excellence is key.</p>
+    </div>
+  </footer>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    // 1. AOS animations Initialization
+    AOS.init({ 
+      duration: 1000, 
+      once: true,
+      easing: 'ease-in-out'
+    });
+
+    // 2. Dark mode toggle and persistence
+    const darkToggle = document.getElementById('darkToggle');
+    const htmlEl = document.documentElement;
+
+    // Function to set the theme and update button
+    function setTheme(theme) {
+      if (theme === 'dark') {
+        htmlEl.classList.add('dark');
+        localStorage.theme = 'dark';
+        darkToggle.textContent = '☀️'; // Sun for light mode
+      } else {
+        htmlEl.classList.remove('dark');
+        localStorage.theme = 'light';
+        darkToggle.textContent = '🌙'; // Moon for dark mode
+      }
+    }
+
+    // Initialize theme from localStorage or system preference
+    if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+      setTheme('dark');
+    } else {
+      setTheme('light');
+    }
+
+    // Toggle event listener
+    darkToggle.addEventListener('click', () => {
+      const newTheme = htmlEl.classList.contains('dark') ? 'light' : 'dark';
+      setTheme(newTheme);
+    });
+    
+    // 3. Conceptual Storage Toggle (Placeholder for PWA/Caching)
+    const storageToggle = document.getElementById('storageToggle');
+    storageToggle.addEventListener('click', () => {
+      alert("This button would typically trigger offline storage (caching) for Progressive Web App (PWA) functionality, allowing you to access key pages even without internet! (Feature coming soon)");
+    });
+
+    // 4. Fade-in on scroll (Intersection Observer)
+    const faders = document.querySelectorAll('.fade-in-up');
+    const appearOptions = { threshold: 0.2, rootMargin: '0px 0px -50px 0px' };
+    const appearOnScroll = new IntersectionObserver(function(entries, observer){
+      entries.forEach(entry => { 
+        if(entry.isIntersecting){ 
+          entry.target.classList.add('visible'); 
+          observer.unobserve(entry.target); 
+        }
+      });
+    }, appearOptions);
+    faders.forEach(fader => { appearOnScroll.observe(fader); });
+
+    // Note: The previous search feature was removed to streamline navigation links, but could easily be re-added under the #reminders section if desired.
+
+  </script>
+</body>
+</html>
